@@ -1,49 +1,327 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
 	<head>
-		<link rel="shortcut icon" href="assets/img/jjj-logo.png" type="image/x-icon">
+		<style>
+			.hero{
+				background-image: url("assets/bg.png");
+				background-size: cover;
+				background-position: center;
+			}
+		    .navbar-item:hover {
+		    	background-color: #080d12!important;
+		    }
+		    .navbar-item {
+		    	background-color: #080d12;
+		    }
+			.column:hover {
+				transform: scale(1.05);
+				transition: all 300ms;
+			}
+			.button:hover {
+				transform: scale(1.05);
+				transition: all 300ms;
+			}
+			footer.footer{
+				height: 0px;
+				max-height: 100px;
+				background-color: #080d12;
+			}
+		</style>
+		<link rel="shortcut icon" href="assets/portfolio-icon.png" type="image/x-icon">
 		<title>Jahel Relova</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/aos.css" rel="stylesheet">					<!-- AOS -->
 		<link href="css/all.css" rel="stylesheet">					<!-- Font Awesome -->
 	    <link href="css/bulma.min.css" rel="stylesheet">			<!-- Bulma Version 0.7.4-->
+	    <link href="css/bulma-pageloader.min.css" rel="stylesheet">			
+	    <link rel="stylesheet" href="css/animate.min.css">			<!-- Animate JS -->
 	</head>
-
-	<body class="has-background-dark">
-		<div class="home navbar is-fixed-top has-background-dark" data scroll header>
+	<body>
+		<!-- <div class="pageloader is-size-1 is-active has-background-black">
+			<span class="title is-size-1">Welcome to my Website</span>
+		</div> -->
+		<div class="home navbar is-fixed-top is-transparent" style="background-color: #080d12;" data scroll header>
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="index.html">
-				    	<img src="assets/img/jjj-logo.png">
+				    	<img src="assets/portfolio-icon.png">
 				    </a>
-				    <a role="button" class="navbar-burger burger has-text-white">
+				  	<a class="navbar-item has-text-white is-hidden-desktop" href="https://www.linkedin.com/in/jose-juan-jeremiah-relova-b41a8b167/">
+            			<i class="fab fa-linkedin fa-2x"></i>
+          			</a>
+          			<a class="navbar-item has-text-white is-hidden-desktop" href="https://github.com/Jaaaahel">
+            			<i class="fab fa-github-square fa-2x"></i>
+          			</a>  
+				    <!-- <a role="button" class="navbar-burger burger has-text-white">
 			        	<span></span>
 					  	<span></span>
 					  	<span></span>
-			        </a>
+			        </a> -->
 				</div>
-				<div class="navbar-menu" id="navmenu">
+				<div class="navbar-menu" id="navmenu" style="background-color: #080d12;">
 					<div class="navbar-start">
-						<a class="navbar-item has-text-white has-text-weight-bold" href="#home">Home</a>
+						<!-- <a class="navbar-item has-text-white has-text-weight-bold" href="#home">Home</a> -->
 					</div>
 					<div class="navbar-end">
-						<a class="navbar-item has-text-white" href="https://www.linkedin.com/in/jose-juan-jeremiah-relova-b41a8b167/">
+						<a class="navbar-item has-text-white is-hidden-touch" href="https://www.linkedin.com/in/jose-juan-jeremiah-relova-b41a8b167/">
             				<i class="fab fa-linkedin fa-2x"></i>
           				</a>
-          				<a class="navbar-item has-text-white" href="https://github.com/Jaaaahel">
+          				<a class="navbar-item has-text-white is-hidden-touch" href="https://github.com/Jaaaahel">
             				<i class="fab fa-github-square fa-2x"></i>
           				</a>
-            			<a class="navbar-item has-text-white" href="https://stackoverflow.com/users/8917439/jahel?tab=profile">
-            				<i class="fab fa-stack-overflow fa-2x"></i>
-            			</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<section class="hero is-fullheight-with-navbar" id="home">
-			
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<div class="columns">
+						<div class="column"></div>
+						<div class="column">
+							<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+								Hi, I'm Jahel.
+							</h1>
+							<h1 class="subtitle is-size-4 has has-text-weight-bold has-text-white">
+								a Developer
+							</h1>		
+						</div>
+						<div class="column"></div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-foot has-text-centered has-text-white">
+				<a class="button is-large is-rounded has-text-black is-white" href="#more">Learn More</a>
+				<br><br><br>
+		    	<div class="container">
+		        	<i class="animated infinite bounce slower has-text-centered fas fa-angle-double-down fa-4x"></i>
+		    	</div>
+		    </div>
 		</section>
 
+		<section class="hero is-fullheight-with-navbar" id="more">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+				      	My Projects
+				    </h1>
+				    <h1 class="title is-size-3 has-text-weight-bold has-text-white">
+				    	Web Projects
+				    </h1>
+				    <br>
+					<div class="columns has-text-white">
+						<div class="column portfolio-project">
+							<div>
+								<figure class="image is-16by9">
+									<img class="portfolio-logo" src="assets/portfolio-logo.png">
+								</figure>
+							</div>
+				    		<h1 class="is-size-4 has-text-weight-bold">
+								My Portfolio
+							</h1>
+							<div style="display: flex; justify-content: center;">
+								<div class="tags are-normal portfolio-tags" style="display: none;">
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">JavaScript-jQuery</span>
+								</div>
+							</div>
+							<a class="has-text-weight-bold" href="https://jahelrelova.com/">https://jahelrelova.com/</a>
+							<h1 class="is-size-7">
+								April 2019
+							</h1>
+							<br>
+						</div>
+						<div class="column va-project">
+							<figure class="image is-16by9">
+								<img class="va-logo" src="assets/va-logo.png">
+							</figure>
+				    		<h1 class="is-size-4 has-text-weight-bold">
+								Virtual Assistant Portfolio
+							</h1>
+							<div style="display: flex; justify-content: center;">
+								<div class="tags are-normal va-tags" style="display: none;">
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
+								</div>
+							</div>
+							<a class="has-text-weight-bold" href="http://virtualassistantph.x10host.com">http://virtualassistantph.x10host.com</a>
+							<h1 class="is-size-7">
+								March 2019
+							</h1>
+							<br>
+						</div>
+						<div class="column esweb-project">
+							<figure class="image is-16by9">
+								<img class="esweb-logo" src="assets/esweb-logo.png">
+							</figure>
+				    		<h1 class="is-size-4 has-text-weight-bold">
+								EyeServe
+							</h1>
+							<div style="display: flex; justify-content: center;">
+								<div class="tags are-normal esweb-tags" style="display: none;">
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">PHP</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">MySQL</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">JSON</span>
+								</div>
+							</div>
+							<a class="has-text-weight-bold" href="http://eyeserve.jahelrelova.com">http://eyeserve.jahelrelova.com</a>
+							<h1 class="is-size-7">
+								October 2018
+							</h1>
+						</div>
+					</div>
+					<div class="columns has-text-white">
+						<div class="column"></div>
+						<div class="column faces-project">
+							<figure class="image is-16by9">
+								<img src="assets/faces-logo.png">
+							</figure>
+				    		<h1 class="is-size-4 has-text-weight-bold">
+								Faces
+							</h1>
+							<div style="display: flex; justify-content: center;">
+								<div class="tags are-normal faces-project-tags" style="display: none;">
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
+								</div>
+							</div>
+							<a class="has-text-weight-bold" href="http://faces.projman.jahelrelova.com">http://faces.projman.jahelrelova.com</a>
+							<h1 class="is-size-7">
+								November 2018
+							</h1>
+						</div>
+						<div class="column"></div>
+					</div>
+
+					<h1 class="title is-size-3 has-text-weight-bold has-text-white">			<!-- Android Projects -->
+						Android Projects
+					</h1>
+					<br>
+					<div class="columns has-text-white">
+						<div class="column esapp-project">
+							<figure class="image is-128x128 is-inline-block">
+								<img src="assets/eyeserve-logo.png">
+							</figure>
+				    		<h1 class="is-size-4 has-text-weight-bold">
+								EyeServe
+							</h1>
+							<div style="display: flex; justify-content: center;">
+								<div class="tags are-normal esapp-project-tags" style="display: none;">
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">Java</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">MySQL</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTTP Request</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">JSON</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">YOLO Darknet</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">TensorFlow</span>
+								</div>
+							</div>
+							<h1 class="is-size-7">
+								October 2018
+							</h1>
+						</div>
+						<div class="column dta-project">
+							<figure class="image is-128x128 is-inline-block">
+								<img src="assets/dta-logo.png">
+							</figure>
+				    		<h1 class="is-size-4 has-text-weight-bold">
+								DragTheAnimal
+							</h1>
+							<div style="display: flex; justify-content: center;">
+								<div class="tags are-normal dta-project-tags" style="display: none;">
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">Java</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">SQLite</span>
+								</div>
+							</div>
+							<h1 class="is-size-7">
+								March 2018
+							</h1>
+						</div>
+						<div class="column vt-project">
+							<figure class="image is-128x128 is-inline-block">
+								<img src="assets/vt-logo.png">
+							</figure>
+				    		<h1 class="is-size-4 has-text-weight-bold">
+								Vehicle Tracking
+							</h1>
+							<div style="display: flex; justify-content: center;">
+								<div class="tags are-normal vt-project-tags" style="display: none;">
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">Java</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">MySQL</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTTP Request</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">PHP</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">JSON</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">Geolocation API</span>
+								  <span class="tag is-rounded has-text-link has-text-weight-bold">GoogleMaps API</span>
+								</div>
+							</div>
+							<h1 class="is-size-7">
+								October 2017
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="hero is-fullheight-with-navbar" id="home">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+				      	Editing
+				    </h1>
+					<div class="columns">
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/JuR-bKO6Y6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/U7XvuKP6WsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/u5vlMmRd2lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<br><br>
+					<div class="columns has-text-white">
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/JjCrrBC9ckw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/fjC6IngU41Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="column">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/z91tnhw0yFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer" id="footer">
+		    <div class="content has-text-centered has-text-white is-large">
+		    	<p>
+		        For inquiries email me at me<i class="fas fa-at is-size-4"></i>jahelrelova.com
+		        </p>
+		    </div>
+		</footer>
+
+		<script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	    <script type="text/javascript" src="js/page-loader.js"></script>
+	    <script type="text/javascript" src="js/aos.js"></script>
+	    <script>
+			AOS.init();
+		</script>
+	    <script src="js/smooth-scroll.polyfills.min.js"></script>
+	    <script>
+			var scroll = new SmoothScroll('a[href*="#"]', {
+			    header: '[data-scroll-header]'
+			});
+		</script>
 	</body>
 </html>
