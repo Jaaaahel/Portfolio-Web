@@ -2,7 +2,7 @@
 <html class="has-navbar-fixed-top">
 	<head>
 		<style>
-			.hero{
+			.intro{
 				background-image: url("assets/bg.png");
 				background-size: cover;
 				background-position: center;
@@ -26,6 +26,10 @@
 				max-height: 100px;
 				background-color: #080d12;
 			}
+			
+	      	.project .screenshot {
+	        	opacity: 0;
+	      	}
 		</style>
 		<link rel="shortcut icon" href="assets/portfolio-icon.png" type="image/x-icon">
 		<title>Jahel Relova</title>
@@ -38,7 +42,7 @@
 	</head>
 	<body>
 		<!-- <div class="pageloader is-size-1 is-active has-background-black">
-			<span class="title is-size-1">Welcome to my Website</span>
+			<span class="title is-size-4 has-text-weight-bold">Welcome to my Website</span>
 		</div> -->
 		<div class="home navbar is-fixed-top is-transparent" style="background-color: #080d12;" data scroll header>
 			<div class="container">
@@ -74,7 +78,7 @@
 			</div>
 		</div>
 
-		<section class="hero is-fullheight-with-navbar" id="home">
+		<section class="hero is-fullheight-with-navbar intro" id="home">
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<div class="columns">
@@ -100,7 +104,59 @@
 		    </div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar" id="more">
+		<section class="hero is-fullheight-with-navbar intro" style="overflow: hidden;">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns">
+						
+						<div class="column" data-aos="fade-right" data-aos-delay="120">
+							<div class="card project has-background-black has-text-white">
+								<div class="card-header">
+									<h1 class="card-header-title is-size-3 has has-text-white is-centered">My portfolio</h1>
+								</div>
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img class="screenshot" src="assets/portfolio-ss.png">
+
+										<img class="logo" src="assets/portfolio-logo.png">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="has-text-centered">
+
+										<div class="tags" style="display: none; min-height: 80px;">
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JavaScript-jQuery</span>
+										</div>
+
+										<p class="descrip is-size-5" style="min-height: 80px;">
+											My portfolio was made to showcase my projects and skills.
+										</p>
+										<br>
+
+										<p class="is-size-5">
+											<a href="https://jahelrelova.com">https://jahelrelova.com</a>
+										</p>
+										<p class="is-size-7">April 2019</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							
+						</div>
+
+						<div class="column">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="hero is-fullheight-with-navbar" id="more" style="overflow: hidden;">
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<h1 class="title is-size-1 has-text-weight-bold has-text-white">
@@ -111,7 +167,7 @@
 				    </h1>
 				    <br>
 					<div class="columns has-text-white">
-						<div class="column portfolio-project">
+						<div class="column portfolio-project" data-aos="fade-right" data-aos-delay="120">
 							<div>
 								<figure class="image is-16by9">
 									<img class="portfolio-logo" src="assets/portfolio-logo.png">
@@ -121,7 +177,7 @@
 								My Portfolio
 							</h1>
 							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal portfolio-tags" style="display: none;">
+								<div class="tags are-normal portfolio-tags">
 								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
 								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
 								  <span class="tag is-rounded has-text-link has-text-weight-bold">JavaScript-jQuery</span>
@@ -133,7 +189,7 @@
 							</h1>
 							<br>
 						</div>
-						<div class="column va-project">
+						<div class="column va-project" data-aos="fade-down" data-aos-delay="120">
 							<figure class="image is-16by9">
 								<img class="va-logo" src="assets/va-logo.png">
 							</figure>
@@ -153,7 +209,7 @@
 							</h1>
 							<br>
 						</div>
-						<div class="column esweb-project">
+						<div class="column esweb-project" data-aos="fade-left" data-aos-delay="120">
 							<figure class="image is-16by9">
 								<img class="esweb-logo" src="assets/esweb-logo.png">
 							</figure>
@@ -177,7 +233,7 @@
 					</div>
 					<div class="columns has-text-white">
 						<div class="column"></div>
-						<div class="column faces-project">
+						<div class="column faces-project" data-aos="fade-up" data-aos-delay="120">
 							<figure class="image is-16by9">
 								<img class="faces-logo" src="assets/faces-logo.png">
 							</figure>
@@ -203,7 +259,7 @@
 					</h1>
 					<br>
 					<div class="columns has-text-white">
-						<div class="column esapp-project">
+						<div class="column esapp-project" data-aos="zoom-in-up" data-aos-delay="130">
 							<figure class="image is-16by9">
 								<img class="esapp-logo" src="assets/esweb-logo.png">
 							</figure>
@@ -224,7 +280,7 @@
 								October 2018
 							</h1>
 						</div>
-						<div class="column dta-project">
+						<div class="column dta-project" data-aos="zoom-in-up" data-aos-delay="130">
 							<figure class="image is-16by9">
 								<img class="dta-logo" src="assets/dta-logo.png">
 							</figure>
@@ -241,7 +297,7 @@
 								March 2018
 							</h1>
 						</div>
-						<div class="column vt-project">
+						<div class="column vt-project" data-aos="zoom-in-up" data-aos-delay="130">
 							<figure class="image is-16by9">
 								<!-- <iframe class="vt-gif" src="https://giphy.com/embed/fV1sRmWhLxx2MOF454" width="1980" height="1080" style="display: none;"></iframe> -->
 								<img class="vt-logo" src="assets/vt-logo.png">
@@ -276,25 +332,25 @@
 				      	Editing
 				    </h1>
 					<div class="columns">
-						<div class="column">
+						<div class="column" data-aos="flip-right" data-aos-delay="120">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/JuR-bKO6Y6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-						<div class="column">
+						<div class="column" data-aos="flip-down" data-aos-delay="120">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/U7XvuKP6WsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-						<div class="column">
+						<div class="column" data-aos="flip-left" data-aos-delay="120">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/u5vlMmRd2lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 					<br><br>
 					<div class="columns has-text-white">
-						<div class="column">
+						<div class="column" data-aos="flip-right" data-aos-delay="120">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/JjCrrBC9ckw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-						<div class="column">
+						<div class="column" data-aos="flip-up" data-aos-delay="120">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/fjC6IngU41Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
-						<div class="column">
+						<div class="column" data-aos="flip-left" data-aos-delay="120">
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/z91tnhw0yFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
@@ -325,5 +381,15 @@
 			    header: '[data-scroll-header]'
 			});
 		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138207128-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-138207128-1');
+		</script>
+
 	</body>
 </html>
