@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
 	<head>
 		<style>
-			.intro{
-				background-image: url("assets/bg.png");
+			.web{
+				background-image: url("assets/bg0.png");
+				background-size: cover;
+				background-position: center;
+			}
+			.android{
+				background-image: url("assets/bg1.png");
+				background-size: cover;
+				background-position: center;
+			}
+			.edit{
+				background-image: url("assets/bg3.png");
 				background-size: cover;
 				background-position: center;
 			}
@@ -11,7 +21,7 @@
 		    	background-color: #080d12!important;
 		    }
 		    .navbar-item {
-		    	background-color: #080d12;
+		    	background: rgba(0, 0, 0, 0.75);
 		    }
 			.column:hover {
 				transform: scale(1.05);
@@ -21,30 +31,37 @@
 				transform: scale(1.05);
 				transition: all 300ms;
 			}
+			.embed-container {
+				position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+			} 
+			.embed-container iframe, .embed-container object, .embed-container embed {
+				position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+			}
 			footer.footer{
 				height: 0px;
 				max-height: 100px;
 				background-color: #080d12;
 			}
-			
 	      	.project .screenshot {
 	        	opacity: 0;
 	      	}
 		</style>
-		<link rel="shortcut icon" href="assets/portfolio-icon.png" type="image/x-icon">
 		<title>Jahel Relova</title>
+		<link href="css/aos.css" rel="stylesheet">						<!-- AOS -->
+		<link href="css/all.css" rel="stylesheet">						<!-- Font Awesome -->
+	    <link href="css/bulma.min.css" rel="stylesheet">				<!-- Bulma Version 0.7.4 -->
+	    <link href="css/animate.min.css" rel="stylesheet">				<!-- Animate JS -->
+	    <link href="css/bulma-ribbon.min.css" rel="stylesheet">			<!-- Ribbon -->
+	    <link href="css/bulma-timeline.min.css" rel="stylesheet">		<!-- Timeline -->
+	    <link href="css/bulma-pageloader.min.css" rel="stylesheet">		<!-- Page Loader -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/aos.css" rel="stylesheet">					<!-- AOS -->
-		<link href="css/all.css" rel="stylesheet">					<!-- Font Awesome -->
-	    <link href="css/bulma.min.css" rel="stylesheet">			<!-- Bulma Version 0.7.4-->
-	    <link href="css/bulma-pageloader.min.css" rel="stylesheet">			
-	    <link rel="stylesheet" href="css/animate.min.css">			<!-- Animate JS -->
+		<link rel="shortcut icon" href="assets/portfolio-icon.png" type="image/x-icon">	<!-- Icon -->
 	</head>
 	<body>
 		<!-- <div class="pageloader is-size-1 is-active has-background-black">
 			<span class="title is-size-4 has-text-weight-bold">Welcome to my Website</span>
 		</div> -->
-		<div class="home navbar is-fixed-top is-transparent" style="background-color: #080d12;" data scroll header>
+		<div class="home navbar is-fixed-top is-transparent" style="background: rgba(0, 0, 0, 0.75);" data scroll header>
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="index.html">
@@ -62,12 +79,12 @@
 					  	<span></span>
 			        </a> -->
 				</div>
-				<div class="navbar-menu" id="navmenu" style="background-color: #080d12;">
+				<div class="navbar-menu" id="navmenu" style="background: rgba(0, 0, 0, 0.75);">
 					<div class="navbar-start">
 						<!-- <a class="navbar-item has-text-white has-text-weight-bold" href="#home">Home</a> -->
 					</div>
 					<div class="navbar-end">
-						<a class="navbar-item has-text-white is-hidden-touch" href="https://www.linkedin.com/in/jose-juan-jeremiah-relova-b41a8b167/">
+						<a class="navbar-item has-text-white is-hidden-touch" href="https://www.linkedin.com/in/jjjrelova/">
             				<i class="fab fa-linkedin fa-2x"></i>
           				</a>
           				<a class="navbar-item has-text-white is-hidden-touch" href="https://github.com/Jaaaahel">
@@ -78,7 +95,7 @@
 			</div>
 		</div>
 
-		<section class="hero is-fullheight-with-navbar intro" id="home">
+		<section class="hero is-fullheight intro has-background-black" id="home">
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<div class="columns">
@@ -89,6 +106,8 @@
 							</h1>
 							<h1 class="subtitle is-size-4 has has-text-weight-bold has-text-white">
 								a Developer
+								<i class="far fa-keyboard"></i>
+
 							</h1>		
 						</div>
 						<div class="column"></div>
@@ -97,25 +116,35 @@
 			</div>
 			<div class="hero-foot has-text-centered has-text-white">
 				<a class="button is-large is-rounded has-text-black is-white" href="#more">Learn More</a>
-				<br><br><br>
+				<br><br>
 		    	<div class="container">
 		        	<i class="animated infinite bounce slower has-text-centered fas fa-angle-double-down fa-4x"></i>
 		    	</div>
 		    </div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar intro" style="overflow: hidden;">
+		<section class="hero is-fullheight-with-navbar web" id="more" style="overflow: hidden;">
 			<div class="hero-body">
 				<div class="container">
-					<div class="columns">
-						
-						<div class="column" data-aos="fade-right" data-aos-delay="120">
-							<div class="card project has-background-black has-text-white">
+					<div class="has-text-centered">
+						<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+					      	My Projects
+					    </h1>
+					    <h1 class="title is-size-3 has-text-white">
+					    	<i class="fas fa-desktop"></i>
+					    	Web Projects
+					    </h1>
+					</div>
+					<br>
+					<div class="columns">					<!-- Web Projects -->
+						<div class="column">
+							<div class="card project has-background-black has-text-white" data-aos="fade-right" data-aos-delay="120">
 								<div class="card-header">
 									<h1 class="card-header-title is-size-3 has has-text-white is-centered">My portfolio</h1>
 								</div>
 								<div class="card-image">
-									<figure class="image is-16by9">
+									<figure class="image is-16by9 has-ribbon">
+										<div class="ribbon is-link is-medium" href="index.html">Fresh</div>
 										<img class="screenshot" src="assets/portfolio-ss.png">
 
 										<img class="logo" src="assets/portfolio-logo.png">
@@ -124,7 +153,7 @@
 								<div class="card-content">
 									<div class="has-text-centered">
 
-										<div class="tags" style="display: none; min-height: 80px;">
+										<div class="tags" style="display: none; min-height: 80px; margin-bottom: 0">
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JavaScript-jQuery</span>
@@ -133,10 +162,9 @@
 										<p class="descrip is-size-5" style="min-height: 80px;">
 											My portfolio was made to showcase my projects and skills.
 										</p>
-										<br>
 
 										<p class="is-size-5">
-											<a href="https://jahelrelova.com">https://jahelrelova.com</a>
+											<a href="https://jahelrelova.com">jahelrelova.com</a>
 										</p>
 										<p class="is-size-7">April 2019</p>
 									</div>
@@ -145,219 +173,328 @@
 						</div>
 
 						<div class="column">
-							
+							<div class="card project has-background-black has-text-white" data-aos="fade-up" data-aos-delay="120">
+								<div class="card-header">
+									<h1 class="card-header-title is-size-4 has has-text-white is-centered" style="min-height: 73px;">Virtual Assistant Portfolio</h1>
+								</div>
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img class="screenshot" src="assets/va-ss.png">
+
+										<img class="logo" src="assets/va-logo.png">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="has-text-centered">
+
+										<div class="tags" style="display: none; min-height: 80px; margin-bottom: 0">
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JavaScript</span>
+										</div>
+
+										<p class="descrip is-size-5" style="min-height: 80px;">
+											This website is for hiring and applying as Virtual Assistant.
+										</p>
+
+										<p class="is-size-5">
+											<a href="http://virtualassistantph.x10host.com">virtualassistantph.x10host.com</a>
+										</p>
+										<p class="is-size-7">March 2019</p>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						<div class="column">
-							
+							<div class="card project has-background-black has-text-white" data-aos="fade-left" data-aos-delay="120">
+								<div class="card-header">
+									<h1 class="card-header-title is-size-3 has has-text-white is-centered">EyeServe-Web</h1>
+								</div>
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img class="screenshot" src="assets/esweb-ss.png">
+
+										<img class="logo" src="assets/es-logo.png">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="has-text-centered">
+
+										<div class="tags" style="display: none; min-height: 80px; margin-bottom: 0">
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">PHP: PDO</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">MySQL</span>
+										</div>
+
+										<p class="descrip is-size-5" style="min-height: 80px;">
+											This website serves as a backend for the EyeServe app.
+										</p>
+
+										<p class="is-size-5">
+											<a href="http://eyeserve.jahelrelova.com">eyeserve.jahelrelova.com</a>
+										</p>
+										<p class="is-size-7">October 2018</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
+					<div class="columns">
+						<div class="column"></div>
+						<div class="column">
+							<div class="card project has-background-black has-text-white" data-aos="fade-up" data-aos-delay="120">
+								<div class="card-header">
+									<h1 class="card-header-title is-size-3 has has-text-white is-centered">Faces</h1>
+								</div>
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img class="screenshot" src="assets/faces-ss.png">
+
+										<img class="logo" src="assets/faces-logo.png">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="has-text-centered">
+
+										<div class="tags" style="display: none; min-height: 80px; margin-bottom: 0">
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JavaScript</span>
+										</div>
+
+										<p class="descrip is-size-5" style="min-height: 80px;">
+											This website was made for a project to show what is poverty.
+										</p>
+
+										<p class="is-size-5">
+											<a href="http://projects.x10host.com/faces">projects.x10host.com/faces</a>
+										</p>
+										<p class="is-size-7">October 2018</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column"></div>
+					</div>
+
 				</div>
 			</div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar" id="more" style="overflow: hidden;">
+		<section class="hero is-fullheight-with-navbar android" id="more" style="overflow: hidden;">
 			<div class="hero-body">
-				<div class="container has-text-centered">
-					<h1 class="title is-size-1 has-text-weight-bold has-text-white">
-				      	My Projects
-				    </h1>
-				    <h1 class="title is-size-3 has-text-weight-bold has-text-white">
-				    	Web Projects
-				    </h1>
-				    <br>
-					<div class="columns has-text-white">
-						<div class="column portfolio-project" data-aos="fade-right" data-aos-delay="120">
-							<div>
-								<figure class="image is-16by9">
-									<img class="portfolio-logo" src="assets/portfolio-logo.png">
-								</figure>
-							</div>
-				    		<h1 class="is-size-3 has-text-weight-bold">
-								My Portfolio
-							</h1>
-							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal portfolio-tags">
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">JavaScript-jQuery</span>
-								</div>
-							</div>
-							<a class="has-text-weight-bold is-size-5" href="https://jahelrelova.com/">https://jahelrelova.com/</a>
-							<h1 class="is-size-7">
-								April 2019
-							</h1>
-							<br>
-						</div>
-						<div class="column va-project" data-aos="fade-down" data-aos-delay="120">
-							<figure class="image is-16by9">
-								<img class="va-logo" src="assets/va-logo.png">
-							</figure>
-				    		<h1 class="is-size-3 has-text-weight-bold">
-								VA Portfolio
-							</h1>
-							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal va-tags" style="display: none;">
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">JavaScript</span>
-								</div>
-							</div>
-							<a class="has-text-weight-bold is-size-5" href="http://virtualassistantph.x10host.com">http://virtualassistantph.x10host.com</a>
-							<h1 class="is-size-7">
-								March 2019
-							</h1>
-							<br>
-						</div>
-						<div class="column esweb-project" data-aos="fade-left" data-aos-delay="120">
-							<figure class="image is-16by9">
-								<img class="esweb-logo" src="assets/esweb-logo.png">
-							</figure>
-				    		<h1 class="is-size-3 has-text-weight-bold">
-								EyeServe
-							</h1>
-							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal esweb-tags" style="display: none;">
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">PHP</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">MySQL</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">JSON</span>
-								</div>
-							</div>
-							<a class="has-text-weight-bold is-size-5" href="http://eyeserve.jahelrelova.com">http://eyeserve.jahelrelova.com</a>
-							<h1 class="is-size-7">
-								October 2018
-							</h1>
-						</div>
+				<div class="container">
+					<div class="has-text-centered">
+						<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+					    </h1>
+					    <h1 class="title is-size-3 has-text-white">
+					    	<i class="fas fa-mobile-alt"></i>
+					    	Android Projects
+					    </h1>
 					</div>
-					<div class="columns has-text-white">
-						<div class="column"></div>
-						<div class="column faces-project" data-aos="fade-up" data-aos-delay="120">
-							<figure class="image is-16by9">
-								<img class="faces-logo" src="assets/faces-logo.png">
-							</figure>
-				    		<h1 class="is-size-3 has-text-weight-bold">
-								Faces
-							</h1>
-							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal faces-tags" style="display: none;">
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTML</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">CSS-Bulma</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">JavaScript</span>
-								</div>
-							</div>
-							<a class="has-text-weight-bold is-size-5" href="http://projects.x10host.com/faces">http://projects.x10host.com/faces</a>
-							<h1 class="is-size-7">
-								November 2018
-							</h1>
-						</div>
-						<div class="column"></div>
-					</div>
-					<h1 class="title is-size-3 has-text-weight-bold has-text-white">			<!-- Android Projects -->
-						Android Projects
-					</h1>
 					<br>
-					<div class="columns has-text-white">
-						<div class="column esapp-project" data-aos="zoom-in-up" data-aos-delay="130">
-							<figure class="image is-16by9">
-								<img class="esapp-logo" src="assets/esweb-logo.png">
-							</figure>
-				    		<h1 class="is-size-4 has-text-weight-bold">
-								EyeServe
-							</h1>
-							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal esapp-tags" style="display: none;">
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">Java</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">MySQL</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTTP Request</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">JSON</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">YOLO Darknet</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">TensorFlow</span>
+					<div class="columns">					<!-- Android Projects -->
+						<div class="column">
+							<div class="card project has-background-black has-text-white" data-aos="zoom-in-up" data-aos-delay="120">
+								<div class="card-header">
+									<h1 class="card-header-title is-size-3 has has-text-white is-centered">EyeServe-App</h1>
+								</div>
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img class="screenshot" src="assets/esapp-ss.png">
+
+										<img class="logo" src="assets/es-logo.png">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="has-text-centered">
+
+										<div class="tags" style="display: none; min-height: 80px;">
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">Java</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">XML</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">YOLO Darknet</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">TensorFlow</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">PHP</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">MySQL</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JSON</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTTP Request</span>
+										</div>
+
+										<p class="descrip is-size-5" style="min-height: 80px;">
+											An app that identifies objects using the camera.
+										</p>
+										<br>
+										<p class="is-size-7">October 2018</p>
+									</div>
 								</div>
 							</div>
-							<h1 class="is-size-7">
-								October 2018
-							</h1>
 						</div>
-						<div class="column dta-project" data-aos="zoom-in-up" data-aos-delay="130">
-							<figure class="image is-16by9">
-								<img class="dta-logo" src="assets/dta-logo.png">
-							</figure>
-				    		<h1 class="is-size-4 has-text-weight-bold">
-								DragTheAnimal
-							</h1>
-							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal dta-tags" style="display: none;">
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">Java</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">SQLite</span>
+
+						<div class="column">
+							<div class="card project has-background-black has-text-white" data-aos="zoom-in-up" data-aos-delay="120">
+								<div class="card-header">
+									<h1 class="card-header-title is-size-3 has has-text-white is-centered">Drag The Animal</h1>
+								</div>
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img class="screenshot" src="assets/dta-ss.png">
+
+										<img class="logo" src="assets/dta-logo.png">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="has-text-centered">
+
+										<div class="tags" style="display: none; min-height: 80px;">
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">Java</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">XML</span>
+										</div>
+
+										<p class="descrip is-size-5" style="min-height: 80px;">
+											A kids game app where you need to identify the animals.
+										</p>
+										<br>
+										<p class="is-size-7">March 2018</p>
+									</div>
 								</div>
 							</div>
-							<h1 class="is-size-7">
-								March 2018
-							</h1>
 						</div>
-						<div class="column vt-project" data-aos="zoom-in-up" data-aos-delay="130">
-							<figure class="image is-16by9">
-								<!-- <iframe class="vt-gif" src="https://giphy.com/embed/fV1sRmWhLxx2MOF454" width="1980" height="1080" style="display: none;"></iframe> -->
-								<img class="vt-logo" src="assets/vt-logo.png">
-							</figure>
-				    		<h1 class="is-size-4 has-text-weight-bold">
-								Vehicle Tracking
-							</h1>
-							<div style="display: flex; justify-content: center;">
-								<div class="tags are-normal vt-tags" style="display: none;">
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">Java</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">MySQL</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">HTTP Request</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">PHP</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">JSON</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">Geolocation API</span>
-								  <span class="tag is-rounded has-text-link has-text-weight-bold">GoogleMaps API</span>
+
+						<div class="column">
+							<div class="card project has-background-black has-text-white" data-aos="zoom-in-up" data-aos-delay="120">
+								<div class="card-header">
+									<h1 class="card-header-title is-size-3 has has-text-white is-centered">Android Tracking</h1>
+								</div>
+								<div class="card-image">
+									<figure class="image is-16by9">
+										<img class="screenshot" src="assets/vt-ss.png">
+
+										<img class="logo" src="assets/vt-logo.png">
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="has-text-centered">
+
+										<div class="tags" style="display: none; min-height: 80px;">
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">Java</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">XML</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">PHP</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JSON</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">MySQL</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTTP Request</span>
+											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">Geolocation & GoogleMaps API</span>
+										</div>
+
+										<p class="descrip is-size-5" style="min-height: 80px;">
+											An app that can track the location of an android phone
+										</p>
+										<br>
+										<p class="is-size-7">October 2017</p>
+									</div>
 								</div>
 							</div>
-							<h1 class="is-size-7">
-								October 2017
-							</h1>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar" id="home">
+		<section class="hero is-fullheight-with-navbar edit" id="home">
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+						<i class="fas fa-video"></i>
 				      	Editing
 				    </h1>
+				    <br>
+				   	<div class="g-ytsubscribe" data-channelid="UCvccwC-ciT6Wm9C-yvomajQ" data-layout="full" data-count="default"></div>
 					<div class="columns">
-						<div class="column" data-aos="flip-right" data-aos-delay="120">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/JuR-bKO6Y6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="column" data-aos="zoom-in" data-aos-delay="100">
+							<div class='embed-container'>
+								<iframe src='https://www.youtube.com/embed/JuR-bKO6Y6c' frameborder='0' allowfullscreen></iframe>
+							</div>
 						</div>
-						<div class="column" data-aos="flip-down" data-aos-delay="120">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/U7XvuKP6WsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="column" data-aos="zoom-in" data-aos-delay="200">
+							<div class='embed-container'>
+								<iframe src='https://www.youtube.com/embed/U7XvuKP6WsY' frameborder='0' allowfullscreen></iframe>
+							</div>
 						</div>
-						<div class="column" data-aos="flip-left" data-aos-delay="120">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/u5vlMmRd2lg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="column" data-aos="zoom-in" data-aos-delay="300">
+							<div class='embed-container'>
+								<iframe src='https://www.youtube.com/embed/u5vlMmRd2lg' frameborder='0' allowfullscreen></iframe>
+							</div>
 						</div>
 					</div>
 					<br><br>
-					<div class="columns has-text-white">
-						<div class="column" data-aos="flip-right" data-aos-delay="120">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/JjCrrBC9ckw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- <div class="columns has-text-white">
+						<div class="column" data-aos="zoom-in" data-aos-delay="300">
+							<div class='embed-container'>
+								<iframe src='https://www.youtube.com/embed/JjCrrBC9ckw' frameborder='0' allowfullscreen></iframe>
+							</div>
 						</div>
-						<div class="column" data-aos="flip-up" data-aos-delay="120">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/fjC6IngU41Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="column" data-aos="zoom-in" data-aos-delay="200">
+							<div class='embed-container'>
+								<iframe src='https://www.youtube.com/embed/fjC6IngU41Q' frameborder='0' allowfullscreen></iframe>
+							</div>
 						</div>
-						<div class="column" data-aos="flip-left" data-aos-delay="120">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/z91tnhw0yFo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="column" data-aos="zoom-in" data-aos-delay="100">
+							<div class='embed-container'>
+								<iframe src='https://www.youtube.com/embed/z91tnhw0yFo' frameborder='0' allowfullscreen></iframe>
+							</div>
 						</div>
 					</div>
-					<br>
+					<br> -->
+
 				</div>
 			</div>
 		</section>
+
+		<!-- <section class="hero is-fullheight-with-navbar">
+			<div class="hero-body has-background-black">
+				<div class="container">
+					<div class="timeline is-centered">
+						<header class="timeline-header">
+							<span class="tag is-medium is-primary">Start of my Dev</span>
+						</header>
+						<div class="timeline-item is-primary">
+							<div class="timeline-marker is-primary"></div>
+							<div class="timeline-content">
+								<p class="heading">January 2016</p>
+								<p>Timeline content - Can include any HTML element</p>
+							</div>
+						</div>
+						<div class="timeline-item is-primary">
+							<div class="timeline-marker is-primary is-image is-32x32">
+								<img src="http://bulma.io/images/placeholders/32x32.png">
+							</div>
+							<div class="timeline-content">
+								<p class="heading">February 2016</p>
+								<p>Timeline content - Can include any HTML element</p>
+							</div>
+						</div>
+						<header class="timeline-header">
+							<span class="tag is-primary">2017</span>
+						</header>
+						<div class="timeline-item is-danger">
+							<div class="timeline-marker is-danger is-icon">
+								<i class="fa fa-flag"></i>
+							</div>
+							<div class="timeline-content">
+								<p class="heading">March 2017</p>
+								<p>Timeline content - Can include any HTML element</p>
+							</div>
+						</div>
+						<header class="timeline-header">
+							<span class="tag is-medium is-primary">End for now :)</span>
+						</header>
+					</div>
+				</div>
+			</div>
+		</section> -->
 
 		<footer class="footer" id="footer">
 		    <div class="content has-text-centered has-text-white is-large">
@@ -390,6 +527,7 @@
 
 		  gtag('config', 'UA-138207128-1');
 		</script>
+		<script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
 
 	</body>
 </html>
