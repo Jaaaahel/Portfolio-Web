@@ -25,5 +25,4 @@ $(function(){
 		})
 	});
 
-	// $(".tags").css('border', '4px solid red');
 });

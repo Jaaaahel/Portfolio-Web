@@ -2,33 +2,26 @@
 <html>
 	<head>
 		<style>
-			.web{
-				background-image: url("assets/bg0.png");
-				background-size: cover;
-				background-position: center;
-			}
-			.android{
-				background-image: url("assets/bg1.png");
-				background-size: cover;
-				background-position: center;
-			}
-			.edit{
-				background-image: url("assets/bg3.png");
-				background-size: cover;
-				background-position: center;
-			}
 		    .navbar-item:hover {
 		    	background-color: #080d12!important;
 		    }
 		    .navbar-item {
 		    	background: rgba(0, 0, 0, 0.75);
 		    }
-			.column:hover {
-				transform: scale(1.05);
-				transition: all 300ms;
+		    .progress::-webkit-progress-value {
+				transition: width 0.5s ease;
 			}
+			.column:hover {
+				transform: scale(1.048);
+				backface-visibility: hidden;
+		 		transition: all 300ms;
+			}
+			.project .screenshot {
+	        	opacity: 0;
+	      	}
 			.button:hover {
-				transform: scale(1.05);
+				transform: scale(1.048);
+				backface-visibility: hidden;
 				transition: all 300ms;
 			}
 			.embed-container {
@@ -42,9 +35,6 @@
 				max-height: 100px;
 				background-color: #080d12;
 			}
-	      	.project .screenshot {
-	        	opacity: 0;
-	      	}
 		</style>
 		<title>Jahel Relova</title>
 		<link href="css/aos.css" rel="stylesheet">						<!-- AOS -->
@@ -98,20 +88,13 @@
 		<section class="hero is-fullheight intro has-background-black" id="home">
 			<div class="hero-body">
 				<div class="container has-text-centered">
-					<div class="columns">
-						<div class="column"></div>
-						<div class="column">
-							<h1 class="title is-size-1 has-text-weight-bold has-text-white">
-								Hi, I'm Jahel.
-							</h1>
-							<h1 class="subtitle is-size-4 has has-text-weight-bold has-text-white">
-								a Developer
-								<i class="far fa-keyboard"></i>
-
-							</h1>		
-						</div>
-						<div class="column"></div>
-					</div>
+					<h1 class="title is-size-1 has-text-grey-lighter">
+						Hi, I'm <b class="has-text-white">Jahel Relova</b>
+					</h1>
+					<h1 class="subtitle is-size-4 has-text-grey-lighter">
+						a Developer
+						<i class="far fa-keyboard"></i>
+					</h1>		
 				</div>
 			</div>
 			<div class="hero-foot has-text-centered has-text-white">
@@ -123,14 +106,14 @@
 		    </div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar web" id="more" style="overflow: hidden;">
+		<section class="hero is-fullheight-with-navbar has-background-dark" id="more" style="overflow: hidden;">
 			<div class="hero-body">
 				<div class="container">
 					<div class="has-text-centered">
-						<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+						<h1 class="title is-size-1 has-text-weight-bold has-text-black">
 					      	My Projects
 					    </h1>
-					    <h1 class="title is-size-3 has-text-white">
+					    <h1 class="title is-size-3 has-text-black">
 					    	<i class="fas fa-desktop"></i>
 					    	Web Projects
 					    </h1>
@@ -144,8 +127,8 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9 has-ribbon">
-										<div class="ribbon is-link is-medium" href="index.html">Fresh</div>
-										<img class="screenshot" src="assets/portfolio-ss.png">
+										<div class="ribbon is-success is-medium" href="index.html">Fresh</div>
+										<img class="screenshot" src="assets/portfolio-preview.png">
 
 										<img class="logo" src="assets/portfolio-logo.png">
 									</figure>
@@ -179,7 +162,7 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9">
-										<img class="screenshot" src="assets/va-ss.png">
+										<img class="screenshot" src="assets/va-preview.png">
 
 										<img class="logo" src="assets/va-logo.png">
 									</figure>
@@ -213,7 +196,7 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9">
-										<img class="screenshot" src="assets/esweb-ss.png">
+										<img class="screenshot" src="assets/esweb-preview.png">
 
 										<img class="logo" src="assets/es-logo.png">
 									</figure>
@@ -251,7 +234,7 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9">
-										<img class="screenshot" src="assets/faces-ss.png">
+										<img class="screenshot" src="assets/faces-preview.png">
 
 										<img class="logo" src="assets/faces-logo.png">
 									</figure>
@@ -284,7 +267,7 @@
 			</div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar android" id="more" style="overflow: hidden;">
+		<section class="hero is-fullheight-with-navbar android has-background-black" id="more" style="overflow: hidden;">
 			<div class="hero-body">
 				<div class="container">
 					<div class="has-text-centered">
@@ -304,7 +287,7 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9">
-										<img class="screenshot" src="assets/esapp-ss.png">
+										<img class="screenshot" src="assets/esapp-preview.png">
 
 										<img class="logo" src="assets/es-logo.png">
 									</figure>
@@ -340,7 +323,7 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9">
-										<img class="screenshot" src="assets/dta-ss.png">
+										<img class="screenshot" src="assets/dta-preview.png">
 
 										<img class="logo" src="assets/dta-logo.png">
 									</figure>
@@ -370,7 +353,7 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9">
-										<img class="screenshot" src="assets/vt-ss.png">
+										<img class="screenshot" src="assets/unavailable.png">
 
 										<img class="logo" src="assets/vt-logo.png">
 									</figure>
@@ -389,7 +372,7 @@
 										</div>
 
 										<p class="descrip is-size-5" style="min-height: 80px;">
-											An app that can track the location of an android phone
+											An app that tracks the location of an android phone
 										</p>
 										<br>
 										<p class="is-size-7">October 2017</p>
@@ -403,15 +386,15 @@
 			</div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar edit" id="home">
+		<section class="hero is-fullheight-with-navbar edit has-background-black" id="home">
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<h1 class="title is-size-1 has-text-weight-bold has-text-white">
 						<i class="fas fa-video"></i>
 				      	Editing
 				    </h1>
-				    <br>
-				   	<div class="g-ytsubscribe" data-channelid="UCvccwC-ciT6Wm9C-yvomajQ" data-layout="full" data-count="default"></div>
+				   	<div class="g-ytsubscribe has-text-white" data-channelid="UCvccwC-ciT6Wm9C-yvomajQ" data-layout="full" data-count="default"></div>
+				   	<br>
 					<div class="columns">
 						<div class="column" data-aos="zoom-in" data-aos-delay="100">
 							<div class='embed-container'>
@@ -498,8 +481,11 @@
 
 		<footer class="footer" id="footer">
 		    <div class="content has-text-centered has-text-white is-large">
+		    	<h1 class="is-size-4 has-text-white has-text-weight-bold">
+		    		"Part of the journey is the end"-Tony Stark
+		    	</h1>
 		    	<p>
-		        For inquiries email me at me<i class="fas fa-at is-size-4"></i>jahelrelova.com
+		        	For inquiries you can contact me at this email me<i class="fas fa-at is-size-4"></i>jahelrelova.com
 		        </p>
 		    </div>
 		</footer>
