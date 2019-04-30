@@ -8,6 +8,9 @@
 		    .navbar-item {
 		    	background: rgba(0, 0, 0, 0.75);
 		    }
+		    a.navbar-item.is-active {
+				box-shadow: inset 0 -5px 0 skyblue;
+			}
 		    .progress::-webkit-progress-value {
 				transition: width 0.5s ease;
 			}
@@ -71,7 +74,7 @@
 				</div>
 				<div class="navbar-menu" id="navmenu" style="background: rgba(0, 0, 0, 0.75);">
 					<div class="navbar-start">
-						<!-- <a class="navbar-item has-text-white has-text-weight-bold" href="#home">Home</a> -->
+						<a class="navbar-item has-text-white has-text-weight-bold is-active" href="#home">Home</a>
 					</div>
 					<div class="navbar-end">
 						<a class="navbar-item has-text-white is-hidden-touch" href="https://www.linkedin.com/in/jjjrelova/">
@@ -88,17 +91,17 @@
 		<section class="hero is-fullheight intro has-background-black" id="home">
 			<div class="hero-body">
 				<div class="container has-text-centered">
-					<h1 class="title is-size-1 has-text-grey-lighter">
+					<h1 class="title is-size-1 has-text-grey-lighter" data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="500">
 						Hi, I'm <b class="has-text-white">Jahel Relova</b>
 					</h1>
-					<h1 class="subtitle is-size-4 has-text-grey-lighter">
+					<h2 class="subtitle is-size-4 has-text-grey-lighter" data-aos="zoom-out-up" data-aos-delay="150" data-aos-duration="500">
 						a Developer
 						<i class="far fa-keyboard"></i>
-					</h1>		
+					</h2>		
 				</div>
 			</div>
-			<div class="hero-foot has-text-centered has-text-white">
-				<a class="button is-large is-rounded has-text-black is-white" href="#more">Learn More</a>
+			<div class="hero-foot has-text-centered has-text-white" data-aos="zoom-out-down" data-aos-delay="150" data-aos-duration="500">
+				<a class="button is-large is-rounded has-text-black is-white" href="#about">Learn More</a>
 				<br><br>
 		    	<div class="container">
 		        	<i class="animated infinite bounce slower has-text-centered fas fa-angle-double-down fa-4x"></i>
@@ -106,16 +109,104 @@
 		    </div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar has-background-dark" id="more" style="overflow: hidden;">
+		<section class="hero is-fullheight about has-background-white" id="about">
+			<div class="hero-body">
+				<div class="container has-text-black">
+					<h1 class="title is-size-1 has-text-centered has-text-black" style="margin-top: -10px;" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
+						ABOUT
+					</h1>
+					<hr class="has-background-black" style="width: 15%; display:block; margin: auto; margin-top: -20px;" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
+					<br>
+					<div class="columns">
+						<div class="column has-text-centered" data-aos="fade-right" data-aos-delay="140" data-aos-duration="500">
+							<div>
+								<figure class="image" style="width: 400px; height: 400px; display:block; margin: auto;">
+									<img src="assets/me.png">
+								</figure>
+							</div>
+							<br>
+							<div>
+								<h2 class="subtitle is-size-4 has-text-black">
+									Who am I?
+								</h2>
+								<h3 class="subtitle has-text-black">
+									Hi I'm Jahel, an aspiring Full-Stack Developer.
+								</h3>
+							</div>
+						</div>
+						<div class="column" data-aos="fade-left" data-aos-delay="140" data-aos-duration="500">
+							<div>
+								<h2>HTML</h2>
+								<progress class="progress is-success is-medium bar1" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>CSS</h2>
+								<progress class="progress is-link is-medium bar2" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>CSS: Bulma</h2>
+								<progress class="progress is-success is-medium bar3" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>JavaScript</h2>
+								<progress class="progress is-link is-medium bar4" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>JavaScript: jQuery</h2>
+								<progress class="progress is-success is-medium bar5" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>JavaScript: Vue</h2>
+								<progress class="progress is-danger is-medium bar6" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>PHP: PDO</h2>
+								<progress class="progress is-link is-medium bar7" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>MySQL</h2>
+								<progress class="progress is-link is-medium bar8" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>Java</h2>
+								<progress class="progress is-link is-medium bar9" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>XML</h2>
+								<progress class="progress is-link is-medium bar10" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>Adobe Photoshop</h2>
+								<progress class="progress is-link is-medium bar11" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+							<div>
+								<h2>Adobe Premiere</h2>
+								<progress class="progress is-link is-medium bar12" value="0" max="100" style="width: 500px;"></progress>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2>Determination</h2>
+						<progress class="progress is-success is-large bar13" value="0" max="100" style="width: 100%;"></progress>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="hero is-fullheight-with-navbar has-background-white" id="more" style="overflow: hidden;">
 			<div class="hero-body">
 				<div class="container">
 					<div class="has-text-centered">
-						<h1 class="title is-size-1 has-text-weight-bold has-text-black">
-					      	My Projects
+						<h1 class="title is-size-1 has-text-weight-bold has-text-black" style="margin-top: -10px;" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500">
+					      	PROJECTS
 					    </h1>
-					    <h1 class="title is-size-3 has-text-black">
+						<hr class="has-background-black" style="width: 15%; display:block; margin: auto; margin-top: -20px;" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
+						<br>
+					    <h1 class="title is-size-3 has-text-black" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">
 					    	<i class="fas fa-desktop"></i>
-					    	Web Projects
+					    	Web &
+					    	<i class="fas fa-mobile-alt"></i>
+					    	Android
 					    </h1>
 					</div>
 					<br>
@@ -127,7 +218,7 @@
 								</div>
 								<div class="card-image">
 									<figure class="image is-16by9 has-ribbon">
-										<div class="ribbon is-success is-medium" href="index.html">Fresh</div>
+										<!-- <div class="ribbon is-success is-medium" href="index.html">Apr. 2019</div> -->
 										<img class="screenshot" src="assets/portfolio-preview.png">
 
 										<img class="logo" src="assets/portfolio-logo.png">
@@ -135,7 +226,6 @@
 								</div>
 								<div class="card-content">
 									<div class="has-text-centered">
-
 										<div class="tags" style="display: none; min-height: 80px; margin-bottom: 0">
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
@@ -242,7 +332,7 @@
 								<div class="card-content">
 									<div class="has-text-centered">
 
-										<div class="tags" style="display: none; min-height: 80px; margin-bottom: 0">
+										<div class="tags" style="display: none; min-height: 80px;">
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
 											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JavaScript</span>
@@ -261,25 +351,10 @@
 							</div>
 						</div>
 						<div class="column"></div>
+						
+						
 					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<section class="hero is-fullheight-with-navbar android has-background-black" id="more" style="overflow: hidden;">
-			<div class="hero-body">
-				<div class="container">
-					<div class="has-text-centered">
-						<h1 class="title is-size-1 has-text-weight-bold has-text-white">
-					    </h1>
-					    <h1 class="title is-size-3 has-text-white">
-					    	<i class="fas fa-mobile-alt"></i>
-					    	Android Projects
-					    </h1>
-					</div>
-					<br>
-					<div class="columns">					<!-- Android Projects -->
+					<div class="columns">
 						<div class="column">
 							<div class="card project has-background-black has-text-white" data-aos="zoom-in-up" data-aos-delay="120">
 								<div class="card-header">
@@ -315,7 +390,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="column">
 							<div class="card project has-background-black has-text-white" data-aos="zoom-in-up" data-aos-delay="120">
 								<div class="card-header">
@@ -345,7 +419,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="column">
 							<div class="card project has-background-black has-text-white" data-aos="zoom-in-up" data-aos-delay="120">
 								<div class="card-header">
@@ -380,19 +453,21 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 
 				</div>
 			</div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar edit has-background-black" id="home">
+		<section class="hero is-fullheight-with-navbar has-background-white" id="home">
 			<div class="hero-body">
 				<div class="container has-text-centered">
-					<h1 class="title is-size-1 has-text-weight-bold has-text-white">
+					<h1 class="title is-size-1 has-text-centered has-text-black" style="margin-top: -10px;" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
 						<i class="fas fa-video"></i>
-				      	Editing
-				    </h1>
+						EDITING
+					</h1>
+					<hr class="has-background-black" style="width: 15%; display:block; margin: auto; margin-top: -20px;" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
 				   	<div class="g-ytsubscribe has-text-white" data-channelid="UCvccwC-ciT6Wm9C-yvomajQ" data-layout="full" data-count="default"></div>
 				   	<br>
 					<div class="columns">
