@@ -1,5 +1,6 @@
 $(function(){
 	$('.project').hover(function () {
+		$('.screenshot').animate({opacity: 0 },50);
 		var screenshot = $(this).find('.screenshot');
 		var logo = $(this).find('.logo');
 
@@ -8,8 +9,8 @@ $(function(){
 		$(this).find('.tags').css('display','none');
 		$(this).find('.tags').animate({ opacity: 1 }, 100);
 
-		logo.animate({ opacity: 0 }, 100, function () {
-			screenshot.animate({ opacity: 1 }, 100);
+		logo.animate({ opacity: 0 }, 50, function () {
+			screenshot.animate({ opacity: 1 }, 50);
 		});
 	}, function () {
 		var screenshot = $(this).find('.screenshot');
@@ -20,8 +21,8 @@ $(function(){
 		$(this).find('.tags').removeClass('is-inline-block');
 		$(this).find('.tags').css('display','none');
 
-		screenshot.animate({ opacity: 0 }, 100, function () {
-			logo.animate({ opacity: 1 }, 100);
+		screenshot.animate({ opacity: 0 }, 50, function () {
+			logo.animate({ opacity: 1 }, 50);
 		})
 	});
 	// $(".progress").css('border', '4px solid red');
@@ -50,6 +51,15 @@ $(function(){
 				}
 			,250);
 		}
+
+		var y = $(this).scrollTop();
+
+			$('.link').each(function (event) {
+				if (y >= $($(this).attr('href')).offset().top - 40) {
+					$('.link').not(this).removeClass('is-active');
+					$(this).addClass('is-active');
+				}
+			});
 	});
 
 });
