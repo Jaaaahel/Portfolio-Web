@@ -45,9 +45,10 @@ $(function(){
 					$(".bar8").attr("value","50");
 					$(".bar9").attr("value","60");
 					$(".bar10").attr("value","60");
-					$(".bar11").attr("value","70");
+					$(".bar11").attr("value","10");
 					$(".bar12").attr("value","70");
-					$(".bar13").attr("value","100");
+					$(".bar13").attr("value","70");
+					$(".bar14").attr("value","100");
 				}
 			,250);
 		}
