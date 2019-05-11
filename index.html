@@ -9,8 +9,8 @@
 				box-shadow: inset 0 -5px 0 skyblue;
 			}
 			.progress-container + .progress-container {
-				margin-bottom: 6px;
-				margin-top: 6px;
+				margin-bottom: 8px;
+				margin-top: 8px;
 			}
 		    .progress::-webkit-progress-value {
 				transition: width 0.5s ease;
@@ -44,10 +44,13 @@
 	    <link href="css/bulma.min.css" rel="stylesheet">				<!-- Bulma Version 0.7.4 -->
 	    <link href="css/animate.min.css" rel="stylesheet">				<!-- Animate JS -->
 	    <link href="css/bulma-ribbon.min.css" rel="stylesheet">			<!-- Ribbon -->
+	    <link href="css/bulma-tooltip.min.css" rel="stylesheet">		<!-- Tooltip -->
 	    <link href="css/bulma-timeline.min.css" rel="stylesheet">		<!-- Timeline -->
 	    <link href="css/bulma-pageloader.min.css" rel="stylesheet">		<!-- Page Loader -->
+
+		<meta name="description" content="My Portfolio"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="assets/portfolio-icon.png" type="image/x-icon">	<!-- Icon -->
+		<link rel="shortcut icon" href="assets/portfolio-icon.png" type="image/x-icon">
 	</head>
 	<body>
 		<!-- <div class="pageloader is-size-1 is-active has-background-black is-hidden-touch">
@@ -127,7 +130,7 @@
 					<div class="columns is-centered">
 						<div class="column has-text-centered" data-aos="fade-right" data-aos-delay="140" data-aos-duration="500">
 							<div>
-								<figure class="image" style="width: 70%; display:block; margin: auto;">
+								<figure class="image" style="width: 65%; display:block; margin: auto;">
 									<img src="assets/me.png">
 								</figure>
 							</div>
@@ -136,13 +139,32 @@
 								<h2 class="subtitle is-size-4 has-text-black">
 									Who am I?
 								</h2>
-								<h3 class="subtitle has-text-black">
-									I'm Jahel, an aspiring Full-Stack Developer.
+								<h3 class="subtitle is-size-4 has-text-black">
+									I'm Jahel, an aspiring Developer.
 								</h3>
 							</div>
 						</div>
 						<div class="column" data-aos="fade-left" data-aos-delay="140" data-aos-duration="500">
-							<div class="progress-container">
+							<h2 class="subtitle is-size-4 has-text-black" style="margin-bottom: -10px;">
+								I know about:
+							</h2>
+							<div class="content is-size-4 has-text-left">
+								<ul class="is-inline-block">
+									<li type="disc">HTML, CSS, JavaScript</li>
+									<li type="disc">Bulma CSS Framework</li>
+									<li type="disc">jQuery</li>
+									<li type="disc">Vue.js</li>
+									<li type="disc">PHP</li>
+									<li type="disc">MySQL</li>
+									<li type="disc">WordPress</li>
+									<li type="disc">Java</li>
+									<li type="disc">XML</li>
+									<li type="disc">C#</li>
+									<li type="disc">Adobe Photoshop</li>
+									<li type="disc">Adobe Premiere</li>
+								</ul>	
+							</div>
+							<!-- <div class="progress-container">
 								<h2>HTML</h2>
 								<progress class="progress is-success is-small bar1" value="0" max="100" style="width: 100%;"></progress>
 							</div>
@@ -167,7 +189,7 @@
 								<progress class="progress is-danger is-small bar6" value="0" max="100" style="width: 100%;"></progress>
 							</div>
 							<div class="progress-container">
-								<h2>PHP: PDO</h2>
+								<h2>PHP</h2>
 								<progress class="progress is-link is-small bar7" value="0" max="100" style="width: 100%;"></progress>
 							</div>
 							<div class="progress-container">
@@ -197,12 +219,8 @@
 							<div class="progress-container">
 								<h2>Adobe Premiere</h2>
 								<progress class="progress is-link is-small bar14" value="0" max="100" style="width: 100%;"></progress>
-							</div>
+							</div> -->
 						</div>
-					</div>
-					<div>
-						<h2>Determination</h2>
-						<progress class="progress is-success is-small bar15" value="0" max="100" style="width: 100%;"></progress>
 					</div>
 				</div>
 			</div>
@@ -224,39 +242,41 @@
 					    </h1>
 					</div>
 					<div class="columns is-multiline is-centered">					<!-- Web Projects -->
-						<div class="column is-3">
-							<div class="card project has-background-black has-text-white" data-aos="zoom-in" data-aos-delay="200">
-								<div class="card-header">
-									<h1 class="card-header-title is-size-5 has has-text-white is-centered">My portfolio</h1>
-								</div>
-								<div class="card-image">
-									<figure class="image is-16by9 has-ribbon">
-										<!-- <div class="ribbon is-success is-medium" href="index.html">Apr. 2019</div> -->
-										<img class="screenshot" src="assets/portfolio-preview.png">
+						
+							<div class="column is-3">
+								<div class="card project has-background-black has-text-white port" data-aos="zoom-in" data-aos-delay="200">
+									<div class="card-header">
+										<h1 class="card-header-title is-size-5 has has-text-white is-centered">My portfolio</h1>
+									</div>
+									<div class="card-image">
+										<figure class="image is-16by9 has-ribbon">
+											<!-- <div class="ribbon is-success is-medium" href="index.html">Apr. 2019</div> -->
+											<img class="screenshot" src="assets/portfolio-preview.png">
 
-										<img class="logo" src="assets/portfolio-logo.png">
-									</figure>
-								</div>
-								<div class="card-content">
-									<div class="has-text-centered">
-										<div class="tags" style="display: none; min-height: 120px; margin-bottom: 0">
-											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
-											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
-											<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JavaScript-jQuery</span>
+											<img class="logo" src="assets/portfolio-logo.png">
+										</figure>
+									</div>
+									<div class="card-content">
+										<div class="has-text-centered">
+											<div class="tags" style="display: none; min-height: 120px; margin-bottom: 0">
+												<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">HTML</span>
+												<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">CSS-Bulma</span>
+												<span class="tag is-rounded has-text-black has-background-white has-text-weight-bold">JavaScript-jQuery</span>
+											</div>
+
+											<p class="descrip is-size-6 has-text-white" style="min-height: 120px;">
+												Website to showcase my projects and skills.
+											</p>
+
+											<p class="is-size-6">
+												<a href="https://jahelrelova.com">jahelrelova.com</a>
+											</p>
+											<p class="is-size-7">April 2019</p>
 										</div>
-
-										<p class="descrip is-size-6" style="min-height: 120px;">
-											Website to showcase my projects and skills.
-										</p>
-
-										<p class="is-size-6">
-											<a href="https://jahelrelova.com">jahelrelova.com</a>
-										</p>
-										<p class="is-size-7">April 2019</p>
 									</div>
 								</div>
 							</div>
-						</div>
+						
 
 						<div class="column is-3">
 							<div class="card project has-background-black has-text-white" data-aos="zoom-in" data-aos-delay="300">
@@ -503,8 +523,8 @@
 			</div>
 		</section>
 
-		<section class="hero is-fullheight-with-navbar" id="experience" style="overflow: hidden;">
-			<div class="hero-body has-background-black">
+		<section class="hero is-fullheight-with-navbar has-background-black" id="experience" style="overflow: hidden;">
+			<div class="hero-body">
 				<div class="container has-text-white">
 					<h1 class="title is-size-1 has-text-weight-bold has-text-white has-text-centered" style="margin-top: 32px;" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
 						EXPERIENCE
@@ -512,9 +532,60 @@
 					<hr style="width: 15%; display:block; margin: auto; margin-top: -20px; margin-bottom: 32px; border: 2px solid white; border-radius: 5px;" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
 					<div class="timeline is-centered">
 						<header class="timeline-header">
-							<span class="tag is-large is-warning">2015</span>
+							<span class="tag is-large is-warning" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">End for now :)</span>
 						</header>
 						<div class="timeline-item is-warning" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500">
+							<div class="timeline-marker is-warning is-image is-32x32">
+								<img src="https://www.ceu.edu.ph/sites/default/files/pictures/STI%20novaliches%20logo.jpg">
+							</div>
+							<div class="timeline-content has-text-warning">
+								<p class="heading">May 2019</p>
+								<p><b>Graduation:</b> BSIT - STI College Novaliches</p>
+							</div>
+						</div>
+						<div class="timeline-item is-link" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
+							<div class="timeline-marker is-link is-image is-32x32">
+								<img src="https://www.metromanilajobs.net/jobscloud?format=nothtml&cId=NTg1MzA=">
+							</div>
+							<div class="timeline-content has-text-link">
+								<p class="heading">March 2019</p>
+								<p><b>End:</b> IT Department Intern - Alorica Teleservices Inc.</p>
+							</div>
+						</div>
+						<header class="timeline-header">
+							<span class="tag is-link is-large" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">2019</span>
+						</header>
+						<div class="timeline-item is-link" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500">
+							<div class="timeline-marker is-link is-image is-32x32">
+								<img src="https://www.metromanilajobs.net/jobscloud?format=nothtml&cId=NTg1MzA=">
+							</div>
+							<div class="timeline-content has-text-link">
+								<p class="heading">November 2018</p>
+								<p><b>Start:</b> IT Department Intern - Alorica Teleservices Inc.</p>
+							</div>
+						</div>
+						<div class="timeline-item is-white" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
+							<div class="timeline-marker is-white is-image is-32x32">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Department_of_Agriculture_of_the_Philippines.svg/200px-Department_of_Agriculture_of_the_Philippines.svg.png">
+							</div>
+							<div class="timeline-content">
+								<p class="heading">June 2018</p>
+								<p><b>End:</b> Climate Change Office Intern - Department of Agriculture</p>
+							</div>
+						</div>
+						<div class="timeline-item is-white" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500">
+							<div class="timeline-marker is-white is-image is-32x32">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Department_of_Agriculture_of_the_Philippines.svg/200px-Department_of_Agriculture_of_the_Philippines.svg.png">
+							</div>
+							<div class="timeline-content">
+								<p class="heading">April 2018</p>
+								<p><b>Start:</b> Climate Change Office Intern - Department of Agriculture</p>
+							</div>
+						</div>
+						<header class="timeline-header">
+							<span class="tag is-white is-large" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">2018</span>
+						</header>
+						<div class="timeline-item is-warning" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
 							<div class="timeline-marker is-warning is-image is-32x32">
 								<img src="https://www.ceu.edu.ph/sites/default/files/pictures/STI%20novaliches%20logo.jpg">
 							</div>
@@ -524,59 +595,9 @@
 							</div>
 						</div>
 						<header class="timeline-header">
-							<span class="tag is-white is-large">2018</span>
+							<span class="tag is-large is-warning" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">2015</span>
 						</header>
-						<div class="timeline-item is-white" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
-							<div class="timeline-marker is-white is-image is-32x32">
-								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Department_of_Agriculture_of_the_Philippines.svg/200px-Department_of_Agriculture_of_the_Philippines.svg.png">
-							</div>
-							<div class="timeline-content">
-								<p class="heading">April 2018</p>
-								<p><b>Start:</b> Climate Change Office Intern - Department of Agriculture</p>
-							</div>
-						</div>
-						<div class="timeline-item is-white" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500">
-							<div class="timeline-marker is-white is-image is-32x32">
-								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Department_of_Agriculture_of_the_Philippines.svg/200px-Department_of_Agriculture_of_the_Philippines.svg.png">
-							</div>
-							<div class="timeline-content">
-								<p class="heading">June 2018</p>
-								<p><b>End:</b> Climate Change Office Intern - Department of Agriculture</p>
-							</div>
-						</div>
-						<div class="timeline-item is-link" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
-							<div class="timeline-marker is-link is-image is-32x32">
-								<img src="https://www.metromanilajobs.net/jobscloud?format=nothtml&cId=NTg1MzA=">
-							</div>
-							<div class="timeline-content has-text-link">
-								<p class="heading">November 2018</p>
-								<p><b>Start:</b> IT Department Intern - Alorica Teleservices Inc.</p>
-							</div>
-						</div>
-						<header class="timeline-header">
-							<span class="tag is-link is-large">2019</span>
-						</header>
-						<div class="timeline-item is-link" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500">
-							<div class="timeline-marker is-link is-image is-32x32">
-								<img src="https://www.metromanilajobs.net/jobscloud?format=nothtml&cId=NTg1MzA=">
-							</div>
-							<div class="timeline-content has-text-link">
-								<p class="heading">March 2019</p>
-								<p><b>End:</b> IT Department Intern - Alorica Teleservices Inc.</p>
-							</div>
-						</div>
-						<div class="timeline-item is-warning" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
-							<div class="timeline-marker is-warning is-image is-32x32">
-								<img src="https://www.ceu.edu.ph/sites/default/files/pictures/STI%20novaliches%20logo.jpg">
-							</div>
-							<div class="timeline-content has-text-warning">
-								<p class="heading">May 2019</p>
-								<p><b>Graduation:</b> BSIT - STI College Novaliches</p>
-							</div>
-						</div>
-						<header class="timeline-header">
-							<span class="tag is-large is-warning">End for now :)</span>
-						</header>
+						
 					</div>
 				</div>
 			</div>
@@ -588,7 +609,7 @@
 		    		"Part of the journey is the end"-Tony Stark
 		    	</h1> -->
 		    	<p>
-		        	For inquiries you can contact me at this email: <u>me@jahelrelova.com</u>
+		        	For inquiries you can contact me at this email: <u>jahelrelova@outlook.com</u>
 		        </p>
 		    </div>
 		</footer>

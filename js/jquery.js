@@ -28,31 +28,30 @@ $(function(){
 	// $(".progress").css('border', '4px solid red');
 
 	$(window).scroll(function() {			//EventOnScroll
-		var hT = $('.bar1').offset().top,
-		hH = $('.bar1').outerHeight(),
-		wH = $(window).height(),
-		wS = $(this).scrollTop();
-		if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
-			setTimeout(
-				function(){
-					$(".bar1").attr("value","80");
-					$(".bar2").attr("value","60");
-					$(".bar3").attr("value","90");
-					$(".bar4").attr("value","50");
-					$(".bar5").attr("value","80");
-					$(".bar6").attr("value","5");
-					$(".bar7").attr("value","55");
-					$(".bar8").attr("value","55");
-					$(".bar9").attr("value","10");
-					$(".bar10").attr("value","60");
-					$(".bar11").attr("value","60");
-					$(".bar12").attr("value","10");
-					$(".bar13").attr("value","75");
-					$(".bar14").attr("value","75");
-					$(".bar15").attr("value","100");
-				}
-			,250);
-		}
+		// var hT = $('.bar1').offset().top,
+		// hH = $('.bar1').outerHeight(),
+		// wH = $(window).height(),
+		// wS = $(this).scrollTop();
+		// if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+		// 	setTimeout(
+		// 		function(){
+		// 			$(".bar1").attr("value","80");
+		// 			$(".bar2").attr("value","60");
+		// 			$(".bar3").attr("value","85");
+		// 			$(".bar4").attr("value","60");
+		// 			$(".bar5").attr("value","80");
+		// 			$(".bar6").attr("value","5");
+		// 			$(".bar7").attr("value","55");
+		// 			$(".bar8").attr("value","55");
+		// 			$(".bar9").attr("value","15");
+		// 			$(".bar10").attr("value","60");
+		// 			$(".bar11").attr("value","60");
+		// 			$(".bar12").attr("value","15");
+		// 			$(".bar13").attr("value","75");
+		// 			$(".bar14").attr("value","75");
+		// 		}
+		// 	,250);
+		// }
 
 		var y = $(this).scrollTop();
 
